@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>upload</title>
+</head>
+<body>
+<h1>Tamil Lens</h1>
+<h2> File upload</h2>
+<form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+    <input id="file-picker" type="file" name="file" accept="image/*" multiple>
+    <input type="submit" value="Upload!" id="upload-button">
+
+</form>
+</body>
+</html>
